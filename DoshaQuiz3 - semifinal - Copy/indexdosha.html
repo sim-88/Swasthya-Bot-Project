@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dosha Quiz</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="faviconayur.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+</head>
+
+<body>
+  <header>
+    <div class="logo"></div>
+    <div class="header-text">Dosha Quiz</div>
+  </header>
+  <div id="categoryContainer" class="category">
+    <h2 id="categoryTitle"></h2>
+  </div>
+  <div class="container">
+    <div class="question">
+      <h3 id="questionText"></h3>
+    </div>
+    <div class="options" id="optionsContainer">
+    </div>
+    <button id="nextBtn" disabled>Next</button>
+  </div>
+  <div id="pieChartContainer" class="pie-chart-container" style="display: none;">
+    
+    <div id="chartContainer" style="height: 370px; width: 100%;"></div>
+  </div>
+  <script src="script.js"></script>
+  <script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
+
+</body>
+
+</html>
