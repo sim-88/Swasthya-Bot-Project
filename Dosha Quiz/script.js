@@ -282,23 +282,23 @@ const categories = [
     const cardsContainer = document.createElement('div');
     cardsContainer.classList.add('cards-container');
     if (predominantDosha === 'Vata') {
-      const card1 = createCard('Vata Balancing: Practical Tips & Tools for a Balanced Life', 'vatta2.jpg', 'Read More', 'https://balancing-vatta.netlify.app/', 'Eating a grounding and nourishing vata diet is one of the best ways to cultivate greater balance in your body and mind.');
-      const card2 = createCard('Vata-Balancing Diet', 'vatta.png', 'Read More', 'https://vatta-balancing-diet.netlify.app', 'Vata is balanced by a diet of freshly cooked, whole foods that are soft or mushy in texture, rich in protein and fat, seasoned with a variety of warming spices, and served warm or hot.');
-      const card3 = createCard('Vata-Balancing Foods', 'vatta4.png', 'Read More', 'https://vatta-balancing-foods.netlify.app', 'Vata is cool, dry, rough and light, so eating foods that neutralize these qualities—foods that are warm, moist, oily, smooth, and nourishing—can help to balance excess vata.');
+      const card1 = createCard('Vata Balancing: Practical Tips & Tools for a Balanced Life', './Images/vatta2.jpg', 'Read More', 'https://balancing-vatta.netlify.app/', 'Eating a grounding and nourishing vata diet is one of the best ways to cultivate greater balance in your body and mind.');
+      const card2 = createCard('Vata-Balancing Diet', './Images/vatta.png', 'Read More', 'https://vatta-balancing-diet.netlify.app', 'Vata is balanced by a diet of freshly cooked, whole foods that are soft or mushy in texture, rich in protein and fat, seasoned with a variety of warming spices, and served warm or hot.');
+      const card3 = createCard('Vata-Balancing Foods', './Images/vatta4.png', 'Read More', 'https://vatta-balancing-foods.netlify.app', 'Vata is cool, dry, rough and light, so eating foods that neutralize these qualities—foods that are warm, moist, oily, smooth, and nourishing—can help to balance excess vata.');
       cardsContainer.appendChild(card1);
       cardsContainer.appendChild(card2);
       cardsContainer.appendChild(card3);
     } else if (predominantDosha === 'Pitta') {
-      const card1 = createCard('Pitta Balancing Foods', 'pittagen1.jpg', 'Read More', 'https://balancing-pitta.netlify.app', 'Ayurveda has a long history detailing the use of herbs and herbal combinations to cool the heat of pitta and support balance in the body and mind. ');
-      const card2 = createCard('Pitta Balancing Diet', 'pitta1.png', 'Read More', 'https://pitta-balancing-diet.netlify.app', 'Pitta is balanced by a diet of fresh, whole foods (both cooked and raw) that are cooling, hearty, energizing, comparatively dry, and high in carbohydrates.');
-      const card3 = createCard('Pitta-Balancing Foods', 'Pitta2.png', 'Read More', 'https://pitta-balancing-foods.netlify.app', 'Pitta is oily, sharp, hot, light, spreading, and liquid, so eating foods that neutralize these qualities—foods that are dry, mild, cooling, grounding, stabilizing, and dense—serve to balance excess pitta.');
+      const card1 = createCard('Pitta Balancing Foods', './Images/pittagen1.jpg', 'Read More', 'https://balancing-pitta.netlify.app', 'Ayurveda has a long history detailing the use of herbs and herbal combinations to cool the heat of pitta and support balance in the body and mind. ');
+      const card2 = createCard('Pitta Balancing Diet', './Images/pitta1.png', 'Read More', 'https://pitta-balancing-diet.netlify.app', 'Pitta is balanced by a diet of fresh, whole foods (both cooked and raw) that are cooling, hearty, energizing, comparatively dry, and high in carbohydrates.');
+      const card3 = createCard('Pitta-Balancing Foods', './Images/Pitta2.png', 'Read More', 'https://pitta-balancing-foods.netlify.app', 'Pitta is oily, sharp, hot, light, spreading, and liquid, so eating foods that neutralize these qualities—foods that are dry, mild, cooling, grounding, stabilizing, and dense—serve to balance excess pitta.');
       cardsContainer.appendChild(card1);
       cardsContainer.appendChild(card2);
       cardsContainer.appendChild(card3);
     } else if (predominantDosha === 'Kapha') {
-      const card1 = createCard('Kapha Balancing Foods', 'Kapha1.png', 'Read More', 'https://balancing-kapha.netlify.app', 'This dosha governs nourishment, growth, lubrication, stamina, and our ability to feel contentment. In excess, it can cause sluggishness, lack of motivation, heaviness in the mind and body, and excessive sleep.');
-      const card2 = createCard('Kapha Balancing Diet', 'Kapha2.png', 'Read More', 'https://kapha-balancing-diet.netlify.app', 'Kapha is balanced by a diet of freshly cooked, whole foods that are light, dry, warming, well spiced, and relatively easy to digest—ideally served warm or hot.');
-      const card3 = createCard('Another Kapha Balancing Foods', 'kapha3.png', 'Read More', 'https://kapha-balancing-foods.netlify.app', 'Kapha is heavy, cool, oily, and smooth, so eating foods that neutralize these qualities—foods that are light, warm, dry, and rough—can help to balance excess kapha.');
+      const card1 = createCard('Kapha Balancing Foods', './Images/Kapha1.png', 'Read More', 'https://balancing-kapha.netlify.app', 'This dosha governs nourishment, growth, lubrication, stamina, and our ability to feel contentment. In excess, it can cause sluggishness, lack of motivation, heaviness in the mind and body, and excessive sleep.');
+      const card2 = createCard('Kapha Balancing Diet', './Images/Kapha2.png', 'Read More', 'https://kapha-balancing-diet.netlify.app', 'Kapha is balanced by a diet of freshly cooked, whole foods that are light, dry, warming, well spiced, and relatively easy to digest—ideally served warm or hot.');
+      const card3 = createCard('Another Kapha Balancing Foods', './Images/kapha3.png', 'Read More', 'https://kapha-balancing-foods.netlify.app', 'Kapha is heavy, cool, oily, and smooth, so eating foods that neutralize these qualities—foods that are light, warm, dry, and rough—can help to balance excess kapha.');
       cardsContainer.appendChild(card1);
       cardsContainer.appendChild(card2);
       cardsContainer.appendChild(card3);

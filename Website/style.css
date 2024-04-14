@@ -326,7 +326,7 @@
   .about {
     position: relative;
     z-index: 1;
-    background: url("about-bg.png") no-repeat;
+    background: url("./website_images/about-bg.png") no-repeat;
     background-position: center;
     background-size: cover;
     padding: 120px 0;
