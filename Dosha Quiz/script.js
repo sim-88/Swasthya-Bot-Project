@@ -72,109 +72,109 @@ const categories = [
       ]
     },
   
-    // {
-    //   name: "NOSE",
-    //   questions: [
-    //     {
-    //       question: "When observing your nose, which description below best matches its appearance?",
-    //       options: [
-    //         { text: "Uneven/Deviated Septum: Your nose appears uneven, and you may have a deviated septum.", dosha: "Vata" },
-    //         { text: "Long Pointed/Red Nose-Tip: Your nose is long and pointed, with a red tip.", dosha: "Pitta" },
-    //         { text: "Short Rounded/Button Nose: Your nose is short, rounded, and has a button-like appearance. ", dosha: "Kapha" }
-    //       ]
-    //     },
-    //     // Add more questions for this category if needed
-    //   ]
-    // },
-    // {
-    //   name: "LIPS",
-    //   questions: [
-    //     {
-    //       question: "When you wake up in the morning, how do your lips usually feel?",
-    //       options: [
-    //         { text: "Dry and possibly cracked, requiring immediate application of lip balm.", dosha: "Vata" },
-    //         { text: "Slightly swollen or inflamed, particularly if you have allergies or sensitivities.", dosha: "Pitta" },
-    //         { text: "Moisturized and comfortable, with no immediate need for lip care. ", dosha: "Kapha" }
-    //       ]
-    //     },
-    //     // Add more questions for this category if needed
-    //   ]
-    // },
+    {
+      name: "NOSE",
+      questions: [
+        {
+          question: "When observing your nose, which description below best matches its appearance?",
+          options: [
+            { text: "Uneven/Deviated Septum: Your nose appears uneven, and you may have a deviated septum.", dosha: "Vata" },
+            { text: "Long Pointed/Red Nose-Tip: Your nose is long and pointed, with a red tip.", dosha: "Pitta" },
+            { text: "Short Rounded/Button Nose: Your nose is short, rounded, and has a button-like appearance. ", dosha: "Kapha" }
+          ]
+        },
+        // Add more questions for this category if needed
+      ]
+    },
+    {
+      name: "LIPS",
+      questions: [
+        {
+          question: "When you wake up in the morning, how do your lips usually feel?",
+          options: [
+            { text: "Dry and possibly cracked, requiring immediate application of lip balm.", dosha: "Vata" },
+            { text: "Slightly swollen or inflamed, particularly if you have allergies or sensitivities.", dosha: "Pitta" },
+            { text: "Moisturized and comfortable, with no immediate need for lip care. ", dosha: "Kapha" }
+          ]
+        },
+        // Add more questions for this category if needed
+      ]
+    },
   
-    // {
-    //   name: "TEETH",
-    //   questions: [
-    //     {
-    //       question: "When I smile, my gums appear:",
-    //       options: [
-    //         { text: "Prominent and sticking out", dosha: "Vata" },
-    //         { text: "Generally soft and medium in size", dosha: "Pitta" },
-    //         { text: "Healthy, white, and not too noticeable", dosha: "Kapha" }
-    //       ]
-    //     },
-    //     // Add more questions for this category if needed
-    //   ]
-    // },
+    {
+      name: "TEETH",
+      questions: [
+        {
+          question: "When I smile, my gums appear:",
+          options: [
+            { text: "Prominent and sticking out", dosha: "Vata" },
+            { text: "Generally soft and medium in size", dosha: "Pitta" },
+            { text: "Healthy, white, and not too noticeable", dosha: "Kapha" }
+          ]
+        },
+        // Add more questions for this category if needed
+      ]
+    },
   
-    // {
-    //   name: "SKIN",
-    //   questions: [
-    //     {
-    //       question: "My skin is:",
-    //       options: [
-    //         { text: "dry,rough and thin", dosha: "Vata" },
-    //         { text: "oily and sensitive", dosha: "Pitta" },
-    //         { text: "smooth, slightly oily and thick", dosha: "Kapha" }
-    //       ]
-    //     },
-    //     // Add more questions for this category if needed
-    //   ]
-    // },
+    {
+      name: "SKIN",
+      questions: [
+        {
+          question: "My skin is:",
+          options: [
+            { text: "dry,rough and thin", dosha: "Vata" },
+            { text: "oily and sensitive", dosha: "Pitta" },
+            { text: "smooth, slightly oily and thick", dosha: "Kapha" }
+          ]
+        },
+        // Add more questions for this category if needed
+      ]
+    },
   
-    // {
-    //   name: "HAIR",
-    //   questions: [
-    //     {
-    //       question: "How would you describe the texture of your hair?",
-    //       options: [
-    //         { text: "Dry, brittle, and prone to knots.", dosha: "Vata" },
-    //         { text: "Straight or slightly wavy, and tends to be oily.", dosha: "Pitta" },
-    //         { text: "Thick, curly, or wavy with a healthy shine.", dosha: "Kapha" }
-    //       ]
-    //     },
-    //     // Add more questions for this category if needed
-    //   ]
-    // },
+    {
+      name: "HAIR",
+      questions: [
+        {
+          question: "How would you describe the texture of your hair?",
+          options: [
+            { text: "Dry, brittle, and prone to knots.", dosha: "Vata" },
+            { text: "Straight or slightly wavy, and tends to be oily.", dosha: "Pitta" },
+            { text: "Thick, curly, or wavy with a healthy shine.", dosha: "Kapha" }
+          ]
+        },
+        // Add more questions for this category if needed
+      ]
+    },
   
-    // {
-    //   name: "APPETITE",
-    //   questions: [
-    //     {
-    //       question: "Recently, I have been:",
-    //       options: [
-    //         { text: "cranky or irritable if I go too long without eating.", dosha: "Vata" },
-    //         { text: "reaching for food in an effort to soothe my emotions, even when I am not physically hungry", dosha: "Pitta" },
-    //         { text: "forgetting to eat, but I usually suffer for it; common symptoms include low energy, spaciness, or lack of focus.", dosha: "Kapha" }
-    //       ]
-    //     },
-    //     // Add more questions for this category if needed
-    //   ]
-    // },
+    {
+      name: "APPETITE",
+      questions: [
+        {
+          question: "Recently, I have been:",
+          options: [
+            { text: "cranky or irritable if I go too long without eating.", dosha: "Vata" },
+            { text: "reaching for food in an effort to soothe my emotions, even when I am not physically hungry", dosha: "Pitta" },
+            { text: "forgetting to eat, but I usually suffer for it; common symptoms include low energy, spaciness, or lack of focus.", dosha: "Kapha" }
+          ]
+        },
+        // Add more questions for this category if needed
+      ]
+    },
   
-    // {
-    //   name: "DIGESTION",
-    //   questions: [
-    //     {
-    //       question: "Lately, I have noticed one or more of the following symptoms in my digestive tract:",
-    //       options: [
-    //         { text: "gas or bloating.", dosha: "Vata" },
-    //         { text: "acidity, burning sensations, excess heat, or tightness in my belly.", dosha: "Pitta" },
-    //         { text: "slow, sluggish digestion accompanied by a sense of heaviness or fullness.", dosha: "Kapha" }
-    //       ]
-    //     },
-    //     // Add more questions for this category if needed
-    //   ]
-    // },
+    {
+      name: "DIGESTION",
+      questions: [
+        {
+          question: "Lately, I have noticed one or more of the following symptoms in my digestive tract:",
+          options: [
+            { text: "gas or bloating.", dosha: "Vata" },
+            { text: "acidity, burning sensations, excess heat, or tightness in my belly.", dosha: "Pitta" },
+            { text: "slow, sluggish digestion accompanied by a sense of heaviness or fullness.", dosha: "Kapha" }
+          ]
+        },
+        // Add more questions for this category if needed
+      ]
+    },
   ];
   
   const categoryTitle = document.getElementById('categoryTitle');
