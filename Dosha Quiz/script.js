@@ -315,42 +315,48 @@ const categories = [
   }
   
   function renderPieChart() {
+    // Calculate total score
+    const totalScore = doshaScores['Vata'] + doshaScores['Pitta'] + doshaScores['Kapha'];
+
+    // Calculate percentages
+    const vataPercentage = (doshaScores['Vata'] / totalScore) * 100;
+    const pittaPercentage = (doshaScores['Pitta'] / totalScore) * 100;
+    const kaphaPercentage = (doshaScores['Kapha'] / totalScore) * 100;
+
     var chart = new CanvasJS.Chart("chartContainer", {
-      exportEnabled: true,
-      animationEnabled: true,
-      title: {
-        text: "Dosha Percentage"
-      },
-      legend: {
-        cursor: "pointer",
-        itemclick: explodePie
-      },
-      data: [{
-        type: "pie",
-        showInLegend: true,
-        toolTipContent: "{name}: <strong>{y}%</strong>",
-        indexLabel: "{name} - {y}%",
-        dataPoints: [
-          { y: doshaScores['Vata'], name: "Vata", exploded: true },
-          { y: doshaScores['Pitta'], name: "Pitta" },
-          { y: doshaScores['Kapha'], name: "Kapha" }
-        ]
-      }]
+        exportEnabled: true,
+        animationEnabled: true,
+        title: {
+            text: "Dosha Percentage"
+        },
+        legend: {
+            cursor: "pointer",
+            itemclick: explodePie
+        },
+        data: [{
+            type: "pie",
+            showInLegend: true,
+            toolTipContent: "{name}: <strong>{y}%</strong>",
+            indexLabel: "{name} - {y}%",
+            dataPoints: [
+                { y: vataPercentage, name: "Vata", exploded: true },
+                { y: pittaPercentage, name: "Pitta" },
+                { y: kaphaPercentage, name: "Kapha" }
+            ]
+        }]
     });
     chart.render();
+
+}
   
+function explodePie(e) {
+  if (typeof (e.dataSeries.dataPoints[e.dataPointIndex].exploded) === "undefined" || !e.dataSeries.dataPoints[e.dataPointIndex].exploded) {
+    e.dataSeries.dataPoints[e.dataPointIndex].exploded = true;
+  } else {
+    e.dataSeries.dataPoints[e.dataPointIndex].exploded = false;
   }
-  
-  function explodePie(e) {
-    if (typeof (e.dataSeries.dataPoints[e.dataPointIndex].exploded) === "undefined" || !e.dataSeries.dataPoints[e.dataPointIndex].exploded) {
-      e.dataSeries.dataPoints[e.dataPointIndex].exploded = true;
-    } else {
-      e.dataSeries.dataPoints[e.dataPointIndex].exploded = false;
-    }
-    e.chart.render();
-  }
-  
-  
+  e.chart.render();
+}
   
   
   loadCategory(currentCategoryIndex);
